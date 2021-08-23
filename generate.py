@@ -10,7 +10,7 @@ _header = '''\
 <!doctype html>
 <html>
 <head>
-<title>CuPy: Pre-Release Wheels</h1>
+<title>CuPy: Pre-Release Wheels</title>
 <meta name="robots" content="noindex,nofollow" />
 </head>
 <body>
