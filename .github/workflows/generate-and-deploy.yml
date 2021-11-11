@@ -13,6 +13,8 @@ jobs:
           persist-credentials: false
 
       - name: Generate 🏭
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cp -a _skeleton/ _generate/
           pip3 install -U PyGithub
