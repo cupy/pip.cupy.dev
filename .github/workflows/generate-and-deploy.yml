@@ -8,16 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
-        with:
-          persist-credentials: false
+        uses: actions/checkout@v3
 
       - name: Generate 🏭
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cp -a _skeleton/ _generate/
-          pip3 install -U PyGithub
+          pip3 install -U 'PyGithub==1.*'
           ./generate.py _generate/
 
       - name: Deploy 🚀
