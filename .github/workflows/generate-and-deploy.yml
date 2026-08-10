@@ -3,6 +3,9 @@ name: Generate and Deploy
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   generate-and-deploy:
     runs-on: ubuntu-latest
